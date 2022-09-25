@@ -568,9 +568,70 @@ iframe{
 
 .xp-r1{
   display: inline-block;
+  vertical-align: top;
   width: 46.5%;
   margin-left: 1.5%;
   margin-right: 1.5%;
+  margin-bottom: 4%;
+}
+
+#more {
+  display: none;
+}
+
+#more1{
+  display: none;
+}
+
+#more2{
+  display: none;
+}
+
+#more3{
+  display: none;
+}
+
+#myBtn{
+  padding: 0.5% 0.7% 0.5% 0.7%;
+  background-color: #f9768a;
+  border-radius: 3px;
+  border: 2.5px solid #f9768a;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 4%;
+}
+
+#myBtn1{
+  padding: 0.5% 0.7% 0.5% 0.7%;
+  background-color: #f9768a;
+  border-radius: 3px;
+  border: 2.5px solid #f9768a;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 4%;
+}
+
+#myBtn2{
+  padding: 0.5% 0.7% 0.5% 0.7%;
+  background-color: #f9768a;
+  border-radius: 3px;
+  border: 2.5px solid #f9768a;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 4%;
+}
+
+#myBtn3{
+  padding: 0.5% 0.7% 0.5% 0.7%;
+  background-color: #f9768a;
+  border-radius: 3px;
+  border: 2.5px solid #f9768a;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: white;
   margin-bottom: 4%;
 }
 
