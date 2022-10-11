@@ -739,6 +739,10 @@ iframe{
   font-size: 30px;
 }
 
+.roo1text h2{
+  font-size: 20px; 
+}
+
 .roo1 p{
   font-size: 16px;
   font-weight: 400;
@@ -793,7 +797,7 @@ iframe{
   }
 
   .start h3{
-    font-size: 15.5px;
+    font-size: 16px;
   }
 
   .start h2{
@@ -812,16 +816,9 @@ iframe{
     padding: 2% 2.3% 2% 2.3%;
     font-size: 14px;
   }
-  .social-icon{
-    width: 28px;
-    margin-left: 2%;
-    margin-right: 1.5%;
-  }
+
   .footnote p{
-    font-size: 17px;
-  }
-  .ig img{
-    width: 32px;
+    font-size: 18px;
   }
 
   .titles h1{
@@ -852,12 +849,28 @@ iframe{
     width: 160px;
   }
 
-  .highlight{
+  .big{
     font-size: 32px;
   }
 
   .smaller{
     font-size: 20px;
+  }
+
+  .roo1text p{
+    font-size: 14px;
+  }
+
+  .roo1text h1{
+    font-size: 24px;
+  }
+
+  .roo1text h2{
+    font-size: 17px;
+  }
+
+  .roo1text button{
+    padding: 2% 3% 2% 3%;
   }
 
 
