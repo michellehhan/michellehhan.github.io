@@ -219,6 +219,11 @@ h3{
   align-items: center;
 }
 
+.box1{
+  display: flex;
+  align-items: center;
+}
+
 
 .top{
   padding-top: 5%;
@@ -873,5 +878,17 @@ iframe{
     padding: 2% 3% 2% 3%;
   }
 
+}
+
+@media (max-width: 1090px){
+  .box{
+    position: absolute;
+  }
+
+  .top{
+    font-size: 32px;
+  }
 
 }
+
+@
