@@ -949,5 +949,76 @@ iframe{
   }
 
   /* ADD BOOTSTRAP NAVBAR*/
+  nav{
+    display: flex;
+    vertical-align: middle;
+  }
+
+
+  .navbar-links a{
+    display: none;
+  }
+
+  #menu{
+    margin-left: 5%;
+    padding: 1%;
+    box-sizing: border-box;
+  }
+ 
+  .navbar-right{
+    position: absolute;
+    right: 20%;
+    padding-top: 1.6%;
+  }
+
+  .menu-btn {
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    border: 2.5px solid #000000;
+  }
+  .menu-btn__burger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 3px;
+    background: rgb(0, 0, 0);
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+  }
+  .menu-btn__burger::before,
+  .menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 3px;
+    background: rgb(0, 0, 0);
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+  }
+  .menu-btn__burger::before {
+    transform: translateY(-7px);
+  }
+  .menu-btn__burger::after {
+    transform: translateY(7px);
+  }
+  /* ANIMATION */
+  .menu-btn.open .menu-btn__burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+  }
+  .menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+  .menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
 
 }
