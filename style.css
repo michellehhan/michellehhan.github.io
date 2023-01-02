@@ -53,7 +53,7 @@ nav{
 
 .navbar-links a:hover{
   color: #E56477;
-  transition: 0.3s;
+  transition: ease-in-out 0.3s;
 }
 
 .logo{
@@ -769,7 +769,7 @@ iframe{
 }
 
 .roo1 button{
-  margin-top: 4%;
+  /* margin-top: 1%; */
   padding: 3% 4% 3% 4%;
   background-color: #74C48C;
   border: 0px solid black;
@@ -790,7 +790,9 @@ iframe{
 }
 
 
-
+.avatar_me{
+  width:45px;
+}
 
 
 
@@ -941,6 +943,66 @@ iframe{
   .start h1{
     font-size: 25px;
   }
+  .contact-me img{
+    width: 120px;
+  }
+  .contact-me iframe{
+    width: 70%;
+  }
+  .stack{
+    width:42%;
+    padding-right: 5%;
+  }
+  .roo1text{
+    width: 46%;
+    padding-left: 2%;
+    padding-right: 3%;
+
+  }
+  .avatar_me{
+    width: 37px;
+  }
+
+  .math-p{
+    display: none;
+  }
+
+  .math-p1:after{
+    content: "I really enjoy the creative and unique persepctive of competition math. I'm currently conducting math research at MIT PRIMES.";
+    font-size: 15px;
+  }
+
+  .code-p{
+    display: none;
+  }
+
+  .code-p1:after{
+    content: "I've recently fallen in love with coding! I am currently a Teaching Assistant for Kode with Klossy, and I'm working on passing USACO silver.";
+    font-size: 15px;
+  }
+
+  .roo1 button{
+    margin-top: 4%;
+  }
+  #mathimg2{
+    display: none;
+  }
+
+  .stack p{
+    display: none;
+  }
+
+  #passion-p{
+    display: none;
+  }
+
+  .passion-p1:after{
+    content: "I'm extremely passionate about empowering females in STEM fields, especially as there's always a disporportionate amount of females compared to males in STEM indsutries. Specifically, I'm part of the nonprofits INTEGIRLS and Superpostion, which both create opportunities for female/nonbinary students interested in STEM.";
+    font-size: 15px;
+  }
+
+  
+
 }
 
 @media (max-width: 830px){

@@ -77,3 +77,7 @@ menuBtn.addEventListener('click', () => {
     menuOpen = false;
   }
 });
+
+function wordChange(){
+  
+}
