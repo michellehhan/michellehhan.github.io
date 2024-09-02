@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 html, body {
   height: 100%;
   width: 99%;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 /* LOADER */
@@ -470,19 +470,23 @@ h3{
 .image-gallery{
   display: flex;
   flex-wrap: wrap;
-  gap: 14px;
+  gap: 15px;
   list-style: none;
+  margin: 0; /* Remove any default margin from the ul */
+  padding: 0; /* Remove any default padding from the ul */
 }
 
 .image-gallery > li {
   height: 230px;
   cursor: pointer;
   position: relative;
+  margin: 0; /* Remove any default margin from the ul */
+  padding: 0; /* Remove any default padding from the ul */
 }
 
 .image-gallery li img {
   object-fit: cover;
-  width: 96%;
+  width: 100%;
   height: 100%;
   vertical-align: middle;
   border-radius: 7px;
@@ -496,7 +500,7 @@ h3{
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
   position: absolute;
-  width: 96%;
+  width: 100%;
   height: 100%;
   background: rgba(57, 57, 57, 0.502);
   top: 0;
@@ -589,6 +593,24 @@ iframe{
   margin-bottom: 4%;
 }
 
+@media (max-width: 1000px) {
+  .containerr {
+    margin-left: 2%;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+  }
+
+  .xp-r1 {
+    width: 85%; 
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 4%;
+  }
+}
+
 #more {
   display: none;
 }
@@ -651,6 +673,7 @@ iframe{
 
 .pink-bg{
   background-color: #fff0f9;
+  border-radius: 6px;
 }
 
 .pink-bg img{
@@ -659,6 +682,7 @@ iframe{
 
 .coral-bg{
   background-color: #fff5f5;
+  border-radius: 6px;
 }
 
 .coral-bg img{
@@ -667,6 +691,7 @@ iframe{
 
 .blurple-bg{
   background-color: #f0f0ff; 
+  border-radius: 6px;
 }
 
 .blurple-bg img{
@@ -675,6 +700,7 @@ iframe{
 
 .yellow-bg{
   background-color: #ebf8ff;
+  border-radius: 6px;
 }
 
 .yellow-bg img{
@@ -720,20 +746,81 @@ iframe{
 }
 
 
+.htxt-orange {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800; 
+  font-size: 48px; 
+  color: transparent; 
+  -webkit-text-stroke: 2.1px #eaaa3d; 
+  background-color: transparent;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
 
+.htxt-blue {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 48px;
+  color: transparent; /* Make text transparent initially */
+  -webkit-text-stroke: 2.1px #64c5db; /* Outline the text */
+  background-color: transparent;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
 
+.htxt-pink {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800; /* Bold for strong outline */
+  font-size: 48px; /* Adjust size as needed */
+  color: transparent; /* Make text transparent initially */
+  -webkit-text-stroke: 2.1px #f19cd1; /* Outline the text */
+  background-color: transparent;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.htxt-coral {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800; /* Bold for strong outline */
+  font-size: 48px; /* Adjust size as needed */
+  color: transparent; /* Make text transparent initially */
+  -webkit-text-stroke: 2.1px #f49590; /* Outline the text */
+  background-color: transparent;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.htxt-orange:hover {
+  color: black; /* Fill text color on hover */
+  -webkit-text-stroke: 0px; /* Remove the outline on hover */
+  background-color: #FDDDA6; /* Highlight background color on hover */
+}
+
+.htxt-pink:hover {
+  color: black; /* Fill text color on hover */
+  -webkit-text-stroke: 0px; /* Remove the outline on hover */
+  background-color: #fbcde9; /* Highlight background color on hover */
+}
+
+.htxt-blue:hover {
+  color: black; /* Fill text color on hover */
+  -webkit-text-stroke: 0px; /* Remove the outline on hover */
+  background-color: #d3f5fd; /* Highlight background color on hover */
+}
+
+.htxt-coral:hover {
+  color: black; /* Fill text color on hover */
+  -webkit-text-stroke: 0px; /* Remove the outline on hover */
+  background-color: #fcd0ce; /* Highlight background color on hover */
+}
 
 
 /* ABOUT */
 .roo1{
   width: 92%;
   display: flex;
-  padding: 4% 4% 2% 4%;
+  padding: 0 4% 2% 4%;
   
 }
 
 .roo1text{
-  width: 40%;
+  width: 80%;
   text-align: left;
   padding-right: 7.5%;
   padding-left: 7.5%;
@@ -750,7 +837,7 @@ iframe{
 
 .roo1 p{
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 200;
   line-height: 180%;
 }
 
