@@ -285,6 +285,14 @@ h3{
   border: 3px solid #92d1af;  
 }
 
+.blue-border{
+  border: 3px solid #d9f0fb;  
+}
+
+.purp-border{
+  border: 3px solid #f7dbfb;  
+}
+
 .row1-2{
   width: 47%;
   display: inline-block;
