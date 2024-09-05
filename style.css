@@ -6,6 +6,189 @@ html, body {
   font-family: 'Lato', sans-serif;
 }
 
+/* NAVIGATION */
+nav {
+  width: calc(100% - 40px); 
+  position: fixed;
+  background-color: white;
+  z-index: 1;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 40px;
+  padding-right: 4%;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 430;
+}
+
+.navbar-links a:hover {
+  color: #E56477;
+  transition: ease-in-out 0.3s;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 45px;
+}
+
+.michelle {
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+/* BURGER MENU */
+.menu-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  padding-right: 15px;
+}
+
+.menu-btn__burger {
+  width: 25px;
+  height: 3px;
+  background: black;
+  border-radius: 5px;
+  transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background: black;
+  border-radius: 5px;
+  transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger::before {
+  transform: translateY(-8px);
+}
+
+.menu-btn__burger::after {
+  transform: translateY(8px);
+}
+
+.menu-btn.open .menu-btn__burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+
+.menu-btn.open .menu-btn__burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn__burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 900px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .menu-btn {
+    display: flex;
+  }
+
+  .navbar-links.open {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background: white;
+    padding: 20px;
+    z-index: 1;
+  }
+}
+
+.menu-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  position: absolute; /* Add this */
+  right: 20px; /* Move it to the right */
+  top: 20px;  /* Adjust if you need to control the vertical position */
+  padding-right: 15px;
+}
+
+.menu-btn__burger {
+  width: 25px;
+  height: 3px;
+  background: black;
+  border-radius: 5px;
+  transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background: black;
+  border-radius: 5px;
+  transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger::before {
+  transform: translateY(-8px);
+}
+
+.menu-btn__burger::after {
+  transform: translateY(8px);
+}
+
+.menu-btn.open .menu-btn__burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+
+.menu-btn.open .menu-btn__burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn__burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
 /* LOADER */
 .loader-wrapper{
   background-color: white;
@@ -1075,124 +1258,16 @@ iframe{
     width: 37px;
   }
 
-  .math-p{
-    display: none;
-  }
-
-  .math-p1:after{
-    content: "I really enjoy the creative and unique persepctive of competition math. I'm currently conducting math research at MIT PRIMES.";
-    font-size: 15px;
-  }
-
-  .code-p{
-    display: none;
-  }
-
-  .code-p1:after{
-    content: "I've recently fallen in love with coding! I am currently a Teaching Assistant for Kode with Klossy, and I'm working on passing USACO silver.";
-    font-size: 15px;
-  }
 
   .roo1 button{
     margin-top: 4%;
-  }
-  #mathimg2{
-    display: none;
   }
 
   .stack p{
     display: none;
   }
 
-  #passion-p{
-    display: none;
-  }
-
-  .passion-p1:after{
-    content: "I'm extremely passionate about empowering females in STEM fields, especially as there's always a disporportionate amount of females compared to males in STEM indsutries. Specifically, I'm part of the nonprofits INTEGIRLS and Superpostion, which both create opportunities for female/nonbinary students interested in STEM.";
-    font-size: 15px;
-  }
-
   
 
 }
 
-@media (max-width: 830px){
-  .start h1{
-    font-size: 5px;
-  }
-
-  /* ADD BOOTSTRAP NAVBAR*/
-  nav{
-    display: flex;
-    vertical-align: middle;
-  }
-
-
-  .navbar-links a{
-    display: none;
-  }
-
-  #menu{
-    margin-left: 5%;
-    padding: 1%;
-    box-sizing: border-box;
-  }
- 
-  .navbar-right{
-    position: absolute;
-    right: 20%;
-    padding-top: 1.6%;
-  }
-
-  .menu-btn {
-    /* position: relative; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
-    transition: all .5s ease-in-out;
-    border: 2.5px solid #000000;
-  }
-  .menu-btn__burger {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 18px;
-    height: 3px;
-    background: rgb(0, 0, 0);
-    border-radius: 5px;
-    transition: all .5s ease-in-out;
-  }
-  .menu-btn__burger::before,
-  .menu-btn__burger::after {
-    content: '';
-    position: absolute;
-    width: 18px;
-    height: 3px;
-    background: rgb(0, 0, 0);
-    border-radius: 5px;
-    transition: all .5s ease-in-out;
-  }
-  .menu-btn__burger::before {
-    transform: translateY(-7px);
-  }
-  .menu-btn__burger::after {
-    transform: translateY(7px);
-  }
-  /* ANIMATION */
-  .menu-btn.open .menu-btn__burger {
-    transform: translateX(-50px);
-    background: transparent;
-    box-shadow: none;
-  }
-  .menu-btn.open .menu-btn__burger::before {
-    transform: rotate(45deg) translate(35px, -35px);
-  }
-  .menu-btn.open .menu-btn__burger::after {
-    transform: rotate(-45deg) translate(35px, 35px);
-  }
-
-}

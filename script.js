@@ -2,6 +2,22 @@ $(window).on("load", function(){
   $(".loader-wrapper").fadeOut(1400);
 });
 
+const menuBtn = document.querySelector('.menu-btn');
+const navbarLinks = document.querySelector('.navbar-links');
+let menuOpen = false;
+
+menuBtn.addEventListener('click', () => {
+  if(!menuOpen) {
+    menuBtn.classList.add('open');
+    navbarLinks.classList.add('open');
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove('open');
+    navbarLinks.classList.remove('open');
+    menuOpen = false;
+  }
+});
+
 function myFunction() {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");
@@ -64,20 +80,4 @@ function myFunction3() {
     btnText.innerHTML = "Read Less";
     moreText.style.display = "inline";
   }
-}
-
-const menuBtn = document.querySelector('.menu-btn');
-let menuOpen = false;
-menuBtn.addEventListener('click', () => {
-  if(!menuOpen) {
-    menuBtn.classList.add('open');
-    menuOpen = true;
-  } else {
-    menuBtn.classList.remove('open');
-    menuOpen = false;
-  }
-});
-
-function wordChange(){
-  
 }
