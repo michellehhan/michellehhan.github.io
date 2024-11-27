@@ -2,7 +2,7 @@
 
 html, body {
   height: 100%;
-  width: 99%;
+  width: 100%;
   font-family: 'Lato', sans-serif;
 }
 
@@ -129,7 +129,7 @@ nav {
     right: 10px;
     background: white;
     padding: 20px;
-    z-index: 1;
+    z-index: 9999;
   }
 }
 
@@ -1020,17 +1020,17 @@ iframe{
 
 /* ABOUT */
 .roo1{
-  width: 92%;
+  width: 94%;
   display: flex;
-  padding: 0 4% 2% 4%;
+  margin: 0 4% 2% 4%;
   
 }
 
 .roo1text{
   width: 80%;
   text-align: left;
-  padding-right: 7.5%;
-  padding-left: 7.5%;
+  margin-right: 7.5%;
+  margin-left: 7.5%;
 }
 
 .roo1 h1{
@@ -1093,146 +1093,7 @@ iframe{
 
 
 /* MOBILE RESPONSIVE */
-@media (max-width: 1170px){
-  .start h1{
-    font-size: 35px;
-  }
 
-  .start h3{
-    font-size: 16px;
-  }
-
-  .start h2{
-    font-size: 22px;
-  }
-
-  .start-btn1{
-    padding: 2% 2.3% 2% 2.3%;
-    font-size: 14px;
-}
-  .start-btn2{
-  padding: 2% 2.3% 2% 2.3%;
-  font-size: 14px;
-}
-  .start-btn1:hover{
-    padding: 2% 2.3% 2% 2.3%;
-    font-size: 14px;
-  }
-
-  .footnote p{
-    font-size: 18px;
-  }
-
-  .titles h1{
-    font-size: 34px;
-  }
-
-  .titles h2{
-    font-size: 15px;
-  }
-
-  .xp-title h1{
-    font-size: 33px;
-  }
-
-  .xp-title button{
-    padding: 0.8% 1.5% 0.8% 1.5%;
-  }
-
-  .xp-r1-info h2{
-    font-size: 22px;
-  }
-
-  .xp-r1-info h3{
-    font-size: 16px;
-  }
-
-  .contact-me img{
-    width: 160px;
-  }
-
-  .big{
-    font-size: 32px;
-  }
-
-  .smaller{
-    font-size: 20px;
-  }
-
-  .roo1text p{
-    font-size: 14px;
-  }
-
-  .roo1text h1{
-    font-size: 24px;
-  }
-
-  .roo1text h2{
-    font-size: 17px;
-  }
-
-  .roo1text button{
-    padding: 2% 3% 2% 3%;
-  }
-
-}
-
-@media (max-width: 1090px){
-  .box{
-    position: absolute;
-  }
-
-  .start{
-    margin-left: 10%;
-  }
-
-  .start h1{
-    font-size: 30px;
-  }
-
-  .start h2{
-    font-size: 22px;
-  }
-
-  .start h3{
-    font-size: 15px;
-  }
-
-  .profile-img{
-    width: 58%;
-  }
-
-  .top{
-    font-size: 32px;
-  }
-
-}
-
-@media (max-width: 910px){
-  .start h1{
-    font-size: 29px;
-  }
-  .start h2{
-    font-size: 21px;
-  }
-  .titles h1{
-    font-size: 30px;
-  }
-
-  .titles h2{
-    font-size: 14px;
-    width: 80%;
-  }
-
-  .navbar-links a{
-    font-size: 16px;
-  }
-
-  .michelle{
-    font-size: 18px;
-  }
-
-}
 
 @media (max-width: 885px){
   .start h1{
@@ -1254,20 +1115,6 @@ iframe{
     padding-right: 3%;
 
   }
-  .avatar_me{
-    width: 37px;
-  }
-
-
-  .roo1 button{
-    margin-top: 4%;
-  }
-
-  .stack p{
-    display: none;
-  }
-
-  
 
 }
 
