@@ -6,7 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-BxZkBbcJ3WAv90fThEjQlKMYTXK+3d4pXSKvKlBGyx2BtgdA70r1A3IlAx3k1nVhEBlT+UxzTI9KstA+JHRkGQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="portfolio/phia.png">
+  <script src="https://kit.fontawesome.com/bc9054cdaf.js" crossorigin="anonymous"></script>
+
   <style>
     /* Reset & Base */
     * {
@@ -57,6 +61,10 @@
       text-align: center;
       position: relative;
       z-index: 1;
+      transition: transform 0.3s ease;
+    }
+    .hero-intern:hover {
+      transform: scale(1.02);
     }
     .hero-intern h3 {
       font-size: 2rem;
@@ -64,7 +72,10 @@
       margin-bottom: 0.5rem;
     }
     .hero-intern p {
-      font-size: 1.2rem;
+      font-size: 1.15rem;
+    }
+    .hero-intern .cta-buttons {
+      margin-top: 1rem;
     }
     .yellow{
       color: rgb(215, 180, 2);
@@ -148,6 +159,16 @@
       z-index: 2;
       margin-top: 1rem;
     }
+    main section:nth-of-type(1) p {
+      border-left: 3px solid transparent;
+      padding-left: 0.75rem;
+      transition: border-color 0.3s ease, background 0.3s ease;
+    }
+
+    main section:nth-of-type(1) p:hover {
+      border-color: #4f7dea;
+      background: #f0f4ff;
+    }
     /* Responsive */
     @media (max-width: 600px) {
       header h1 {
@@ -210,14 +231,18 @@
   <header>
     <img src="portfolio/phia.png" style="border-radius: 20px;" alt="Phia Logo">
     <h1>Michelle Han // Cover Letter</h1>
-    <h2>Hello Phia Team! I'm Michelle, an enthusiastic developer ready to help shape the future of smart shopping.</h2>
+    <h2 style="width: 80%;">Hello Phia Team! I'm Michelle, an enthusiastic developer ready to help shape the future of smart shopping.</h2>
   </header>
   <!-- Hero Section: Experience & Summer Intern Emphasis -->
   <section class="hero-intern" id="hero-intern">
     <h3>Your Summer Intern!</h3>
     <p style="margin: 0 3%;">
-      I’m an incoming MIT student with hands-on experience across iOS & web dev, and a real passion for what Phia is building. As a summer intern applicant, I’m excited to bring thoughtful engineering to Phia and help design for sustainability at scale.
+      I’m an incoming MIT student with hands-on experience across iOS & web development, and a real passion for what Phia is building. As a summer intern applicant, I’m excited to bring thoughtful engineering to Phia and help design for sustainability at scale.
     </p>
+    <div class="cta-buttons">
+      <a href="/portfolio.html" target="_blank"><i class="fa-solid fa-desktop" style="padding-right: 5px;"></i>  View My Portfolio</a>
+      <a href="/experience.html" target="_blank"><i class="fa-solid fa-up-right-from-square" style="padding-right: 5px;"></i>  View My Resume</a>
+    </div>
   </section>
   <main>
     <section>
@@ -271,6 +296,12 @@
         <li>✅ <strong>Experience & Education:</strong> As an incoming MIT student majoring in Computer Science, Economics, & Data Science, I bring extensive front-end development experience, along with growing backend familiarity and strong design instincts.</li>
       </ul>
     </section>
+    <section style="background-color: #ecf6ff">
+      <h3>Let’s Build Together :)</h3>
+      <p>
+        Phia is on the cutting edge of smart, sustainable shopping. I’d love the opportunity to join your team as a summer intern and help shape the product’s next chapter.
+      </p>
+    </section>
     <section>
       <h3>A Few of My Favorite Secondhand Steals</h3>
 
@@ -286,7 +317,7 @@
           <div class="swiper-slide">
             <div class="slide-content">
               <img src="burberrytrench.jpeg" alt="Vintage Burberry trench coat">
-              <p><strong>Vintage Burberry trench coat</strong> – $130 on Mercari Japan. A little mystery, a lot of slay.</p>
+              <p><strong>Vintage Burberry trench coat</strong> – $130 on Mercari Japan. Timeless, dramatic, and the reason I check the weather hoping for rain.</p>
             </div>
           </div>
           <div class="swiper-slide">
