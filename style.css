@@ -1281,7 +1281,7 @@ iframe{
 .swiper-button-next,
 .swiper-button-prev {
   color: #007AFE !important; /* make sure they are visible */
-  z-index: 20 !important; /* above slides */
+  z-index: 40 !important; /* above slides */
   opacity: 1 !important;
   display: block !important;
   width: 35px;
