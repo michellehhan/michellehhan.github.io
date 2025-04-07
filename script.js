@@ -1,5 +1,24 @@
 $(window).on("load", function(){
-  $(".loader-wrapper").fadeOut(1400);
+  $(".loader-wrapper").fadeOut(1400, function() {
+    console.log("Loader finished – initializing Reflexion swiper");
+    var reflexionSwiper = new Swiper('.reflexion-swiper', {
+      loop: true,
+      slidesPerView: 1,
+      effect: 'slide',
+      autoHeight: true,
+      spaceBetween: 0,
+      pagination: {
+        el: '.reflexion-swiper .swiper-pagination',
+        clickable: true
+      },
+      navigation: {
+        nextEl: '.reflexion-swiper .swiper-button-next',
+        prevEl: '.reflexion-swiper .swiper-button-prev'
+      }
+    });
+    // Lower the z-index of the swiper container
+    $('.reflexion-swiper').css('z-index', '1');
+  });
 });
 
 document.addEventListener("DOMContentLoaded", function() {
