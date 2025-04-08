@@ -809,9 +809,9 @@ iframe{
 }
 
 .xp-title button{
-  padding: 0.6% 1.5% 0.6% 1.5%;
+  padding: 1% 4% 1% 4%;
   background-color: #f9768a;
-  border-radius: 3px;
+  border-radius: 10px;
   border: 2.5px solid #f9768a;
 }
 
@@ -819,7 +819,7 @@ iframe{
   color: white;
   font-weight: 700;
   font-family: 'Lato', sans-serif;
-  font-size: 17px;
+  font-size: 1.15rem;
   text-decoration: none;
 }
 
@@ -877,12 +877,21 @@ iframe{
   display: none;
 }
 
+#more4{
+  display: none;
+}
+
+#more5{
+  display: none;
+}
+
 #myBtn{
-  padding: 0.5% 0.7% 0.5% 0.7%;
+  padding: 0.6% 0.8% 0.6% 0.8%;
   background-color: #f97676;
   border-radius: 3px;
   border: 2.5px solid #f97676;
   font-family: 'Lato', sans-serif;
+  font-size: 0.87rem;
   font-weight: 500;
   color: white;
   margin-bottom: 4%;
@@ -897,6 +906,7 @@ iframe{
   font-weight: 500;
   color: white;
   margin-bottom: 4%;
+  font-size: 0.87rem;
 }
 
 #myBtn2{
@@ -908,6 +918,7 @@ iframe{
   font-weight: 500;
   color: white;
   margin-bottom: 4%;
+  font-size: 0.87rem;
 }
 
 #myBtn3{
@@ -919,6 +930,31 @@ iframe{
   font-weight: 500;
   color: white;
   margin-bottom: 4%;
+  font-size: 0.87rem;
+}
+
+#myBtn4{
+  padding: 0.5% 0.7% 0.5% 0.7%;
+  background-color: #68869f;
+  border-radius: 3px;
+  border: 2.5px solid #68869f;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 4%;
+  font-size: 0.87rem;
+}
+
+#myBtn5{
+  padding: 0.5% 0.7% 0.5% 0.7%;
+  background-color: #77be7d;
+  border-radius: 3px;
+  border: 2.5px solid #77be7d;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 4%;
+  font-size: 0.87rem;
 }
 
 .pink-bg{
@@ -944,8 +980,27 @@ iframe{
   border-radius: 6px;
 }
 
+.navy-bg{
+  background-color: #e3f2ff; 
+  border-radius: 6px;
+}
+
 .blurple-bg img{
-  border: 4px solid #aaa8ff;
+  border: 4px solid #a288e4; 
+}
+
+.green-bg img{
+  border: 4px solid #77be7d;
+}
+
+.green-bg{
+  background-color: #eefdf2; 
+  border-radius: 6px;
+}
+
+
+.navy-bg img{
+  border: 4px solid #68869f;
 }
 
 .yellow-bg{

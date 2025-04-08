@@ -101,4 +101,37 @@ document.addEventListener("DOMContentLoaded", function() {
       moreText.style.display = "inline";
     }
   }
+
+  window.myFunction4 = function() {
+    var dots = document.getElementById("dots4");
+    var moreText = document.getElementById("more4");
+    var btnText = document.getElementById("myBtn4");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read More";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read Less";
+      moreText.style.display = "inline";
+    }
+  }
+
+  window.myFunction5 = function() {
+    var dots = document.getElementById("dots5");
+    var moreText = document.getElementById("more5");
+    var btnText = document.getElementById("myBtn5");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read More";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read Less";
+      moreText.style.display = "inline";
+    }
+  }
 });
+
